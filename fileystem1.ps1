@@ -16,3 +16,12 @@ New-Item -Path $newPath "file.txt" -ItemType File -Force
 # Using PowerShell commnads to delete a file
 
 Remove-Item -Path ./files/file1.txt
+
+
+# Using Add-Content cmdlet 
+#you can append data to a text/html file.
+
+Add-Content ./files/file.txt "Hello powershell"
+
+# retriving content from a file
+Get-Content ./files/file.txt | Write-Host
