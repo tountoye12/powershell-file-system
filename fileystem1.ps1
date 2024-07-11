@@ -25,3 +25,7 @@ Add-Content ./files/file.txt "Hello powershell"
 
 # retriving content from a file
 Get-Content ./files/file.txt | Write-Host
+
+
+# powershell export to csv
+Get-Command | Export-Csv commands.csv
