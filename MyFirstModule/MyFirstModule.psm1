@@ -17,8 +17,13 @@ function Get-hello {
         $name
     )
 
-    Write-Host "Hello $name how are you"
+    Write-Host "Hello $name how are you   $(Get-Mood)"  -ForegroundColor Green
     
+}
+
+
+function local:Get-Mood {
+   Write-Host "I'm good"
 }
 
 Export-ModuleMember -Function Get-Diallo, Show-Date, Get-hello
